@@ -38,3 +38,24 @@ variable "private_subnet_cidr" {
     "10.0.12.0/24"
   ]
 }
+variable "database_subnet_cidr" {
+  default = [
+    "10.0.21.0/24",
+    "10.0.22.0/24"
+  ]
+}
+
+variable "is_peering_required" {
+  default = true
+  type = bool
+}
+
+# variable "acceptor_vpc_id" {
+#   default = ""
+#   type = string
+# }
+
+# variable "peering_vpc_id" {
+#   default = ""
+#   type = string
+# }
