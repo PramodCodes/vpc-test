@@ -1,5 +1,7 @@
 module "roboshop" {
-    source = "../tarraform-aws-vpc"
+    # source = "../tarraform-aws-vpc"
+    # changing source to git
+    source = "git::https://github.com/Pramodcodes/tarraform-aws-vpc.git?ref=main"
     project_name = var.project_name
     project_environment = var.project_environment
     common_tags = var.common_tags
